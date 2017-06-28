@@ -1,6 +1,6 @@
-# myproject
+# PersonalBlog
 
-> a test prject
+> a prject showing production
 
 ## Build Setup
 

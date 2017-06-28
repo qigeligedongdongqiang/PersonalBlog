@@ -1,7 +1,7 @@
 {
-  "name": "myproject",
+  "name": "personalblog",
   "version": "1.0.0",
-  "description": "a test prject",
+  "description": "a prject showing production",
   "author": "Ngmm_Jadon <maojiadong@ngmm365.com>",
   "private": true,
   "scripts": {
