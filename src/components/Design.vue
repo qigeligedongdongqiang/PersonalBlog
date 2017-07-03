@@ -2,7 +2,11 @@
 
 	<div id="design">
 		<ul>
-			<li v-for=""></li>
+			<li 
+			is="image-case" 
+			v-for="item in items" 
+			:imgObj="{img:item.img,link:item.link,width:'1025px',height:'245px'}"
+			></li>
 		</ul>
 	</div>
 
@@ -10,15 +14,19 @@
 
 <script>
 
+import ImageCase from '@/components/Base/ImageCase'
+
 export default {
 	name: 'design',
-	data() {
-		return {
-			items: [
-
-			]
+	computed: {
+		items() {
+			return this.$store.state.designItems;
 		}
-	}
+	},
+	mounted() {
+		this.$store.commit('updateSelectItem','design');
+	},
+	components: {ImageCase}
 }
 
 </script>
@@ -26,7 +34,17 @@ export default {
 <style lang="scss" scoped>
 
 #design {
-	font-size: 35px,
+
+	ul {
+		padding: 0;
+		margin: 0;
+		width: 1025px;
+		li {
+			height: 245px;
+			margin-bottom: 25px;
+		}
+	}
+
 }
 	
 </style>

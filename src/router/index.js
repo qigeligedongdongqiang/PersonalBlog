@@ -5,6 +5,8 @@ import Design from '@/components/Design'
 import Photography from '@/components/Photography'
 import Contact from '@/components/Contact'
 import About from '@/components/About'
+ 
+import Detail from '@/components/Detail'
 
 Vue.use(Router)
 
@@ -12,28 +14,27 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
       component: Design
     },
     {
       path: '/Design',
-      name: 'Design',
       component: Design
     },
     {
       path: '/Photography',
-      name: 'Photography',
       component: Photography
     },    
     {
       path: '/Contact',
-      name: 'Contact',
       component: Contact
     },
     {
       path: '/About',
-      name: 'About',
       component: About
+    },
+    {
+      path: '/Detail/:type/:id',
+      component: Detail
     }
   ]
 })

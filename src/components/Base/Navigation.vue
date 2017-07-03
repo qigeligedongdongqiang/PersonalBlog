@@ -2,12 +2,12 @@
 	
 	<div id="navigation">
 		<ul>
-			<li v-for="item in navItems" :class=item.class>
-				<router-link :to=item.link >
+			<li v-for="item in navItems" :class="[item.class,{'selected':item.class == selectItem}]" >
+				<router-link :to=item.link>
 					<img :src=item.img alt="">		
 				</router-link>
 			</li>			
-		</ul>		
+		</ul>	
 	</div>
 
 </template>
@@ -38,14 +38,19 @@ export default {
 					img: require('@/assets/head/CONTACT.png'),
 					link: '/Contact'
 				},
-				{
-					class: 'logo',
-					img: require('@/assets/head/LOGO.png'),
-					link: '/Design'
-				}
+				// {
+				// 	class: 'logo',
+				// 	img: require('@/assets/head/LOGO.png'),
+				// 	link: '/Design'
+				// }
 			]
 		}
-	}
+	},
+	computed:{
+				selectItem() {
+					return this.$store.state.navSelectItem;
+				}
+			}
 }
 
 </script>
@@ -69,6 +74,12 @@ $height: 150px;
 		height: 23px;
 		overflow: hidden;
 		img:hover {
+			margin-top: -23px;
+		}
+	}
+
+	.selected {
+		img {
 			margin-top: -23px;
 		}
 	}
@@ -101,19 +112,19 @@ $height: 150px;
 		}
 	}
 
-	.logo {
-		float: right;
-		margin-top: 60px;
-		margin-right: 0;
-		height: 25px;
-		width: 170px;
-		img {
-			width: 170px;
-			&:hover {
-				margin-top: -25px;
-			}
-		}
-	}
+	// .logo {
+	// 	float: right;
+	// 	margin-top: 60px;
+	// 	margin-right: 0;
+	// 	height: 25px;
+	// 	width: 170px;
+	// 	img {
+	// 		width: 170px;
+	// 		&:hover {
+	// 			margin-top: -25px;
+	// 		}
+	// 	}
+	// }
 }
 
 </style>
