@@ -10,6 +10,14 @@ export const store = new Vuex.Store({
 
     //design页面数据
     designItems: [
+        {
+            img: require('@/../static/img/design/design12/index.jpg'),
+            link: '/Detail/design/12'
+        },
+        {
+            img: require('@/../static/img/design/design11/index.jpg'),
+            link: '/Detail/design/11'
+        },
     	{
 			img: require('@/../static/img/design/design10/index.jpg'),
 			link: '/Detail/design/10'
@@ -134,25 +142,26 @@ export const store = new Vuex.Store({
     		},
     		{//4
     			text: {
-    				title: 'East Artisan · 东家',
+    				title: 'East Artisan · 东方首饰',
     				summary: 'Design | Brand',
     				pList: [
-    					'东家(East Artisan)app是一款匠人手工作品平台，其挖掘了1000+的手艺人。在app内可以结识匠人，了解他们的故事，购买精美的手艺作品。东家致力于传统手艺的传承和复兴，打造可消费的东方美学。',
-    					'_ 东家：取其中文字“东”<br>_ 乐:匠人乐在其中，才是精妙产品的起源。<br>_ 匠人（artisan）<br>_ 东方美学（east）<br>_ 两仪:天地初开，一切皆为混沌，是为无极，无极生太极，太极生两仪，两仪为阴阳,天为阳气，地为阴气，二气相互作用，产生万物。',
-    					'将以上源自东家的概念及元素通过图形化的表现形式融合。辅助图形采用红丝带包装，产品不再是冷冰冰的产品，而是“礼物”，其贯穿于东家品牌之中，意为拉近东家与客户之间的距离。'
+    					'_ 东方首饰：取其中文字“东”<br>_ 乐:匠人乐在其中，才是精妙产品的起源。<br>_ 匠人（artisan）<br>_ 东方美学（east）<br>_ 两仪:天地初开，一切皆为混沌，是为无极，无极生太极，太极生两仪，两仪为阴阳,天为阳气，地为阴气，二气相互作用，产生万物。',
+    					'将以上源自东方首饰的概念及元素通过图形化的表现形式融合。辅助图形采用红丝带包装，产品不再是冷冰冰的产品，而是“礼物”，其贯穿于东方首饰品牌之中，意为拉近东方首饰与客户之间的距离。'
     				]
     			},
     			imgList: [
     				require('@/../static/img/design/design4/1.jpg'),
     				require('@/../static/img/design/design4/2.jpg'),
     				require('@/../static/img/design/design4/3.jpg'),
-    				require('@/../static/img/design/design4/4.gif'),
-    				require('@/../static/img/design/design4/5.jpg'),
+    				require('@/../static/img/design/design4/4.jpg'),
+    				require('@/../static/img/design/design4/5.gif'),
     				require('@/../static/img/design/design4/6.jpg'),
     				require('@/../static/img/design/design4/7.jpg'),
     				require('@/../static/img/design/design4/8.jpg'),
     				require('@/../static/img/design/design4/9.jpg'),
     				require('@/../static/img/design/design4/10.jpg'),
+                    require('@/../static/img/design/design4/11.jpg'),
+                    require('@/../static/img/design/design4/12.jpg'),
     			]	
     		},
     		{//5
@@ -249,7 +258,30 @@ export const store = new Vuex.Store({
     				require('@/../static/img/design/design10/10.jpg'),
     				require('@/../static/img/design/design10/11.jpg'),
     			]	
-    		}
+    		},
+            {//11
+                imgList: [
+                    require('@/../static/img/design/design11/1.jpg'),
+                    require('@/../static/img/design/design11/2.jpg'),
+                    require('@/../static/img/design/design11/3.jpg'),
+                    require('@/../static/img/design/design11/4.jpg'),
+                    require('@/../static/img/design/design11/5.jpg'),
+                    require('@/../static/img/design/design11/6.jpg'),
+                    require('@/../static/img/design/design11/7.jpg'),
+                    require('@/../static/img/design/design11/8.jpg'),
+                ]   
+            },
+            {//12
+                imgList: [
+                    require('@/../static/img/design/design12/1.jpg'),
+                    require('@/../static/img/design/design12/2.jpg'),
+                    require('@/../static/img/design/design12/3.jpg'),
+                    require('@/../static/img/design/design12/4.jpg'),
+                    require('@/../static/img/design/design12/5.jpg'),
+                    require('@/../static/img/design/design12/6.png'),
+                    require('@/../static/img/design/design12/7.png'),
+                ]   
+            }
     	],
     	//photo详情
     	photography: [
